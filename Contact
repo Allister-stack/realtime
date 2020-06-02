@@ -1,0 +1,158 @@
+
+
+<html>
+<head>
+
+   <title>Contact</title>
+
+        <center><h1>Contact</h1></center>
+
+</head>
+
+<body>
+
+
+
+<style>
+
+body{
+    background-image: url("Autodesk2.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+h1{
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 40;
+  font-family: sans-serif;
+}
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #fff;
+  padding: 5px 0 5px 0;
+  text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
+  transition: background-color 0.1s ease-in-out;
+
+}
+
+.nav_link:hover {
+     background-color: #686868;
+}
+
+
+h3{
+  font-family: sans-serif;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #686868;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  width: 350px;
+  position: absolute;
+  left: 500px;
+}
+label{
+  font-family: sans-serif;
+
+}
+</style>
+
+
+
+<br>
+<center><h3>For any questions, queries or quotes e-mail me<br>
+   <a href="mailto:allister.jacobs@hotmail.co.uk">allister.jacobs@hotmail.co.uk</a> or<br> fill in your
+details below or upload your <br>rough sketch for a quote and I will be in touch;</h3></center>
+
+
+<div class="container">
+    <form action="action_page.php">
+
+    <label for="fname">Name</label>
+       <input type="text" id="fname" name="firstname" placeholder="">
+
+    <label for="lname">Cell</label>
+       <input type="text" id="lname" name="lastname" placeholder="">
+
+    <label for="subject">Question/Query</label>
+      <textarea id="subject" name="subject" placeholder="" style="height:120px"></textarea>
+
+      <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+     </form>
+   </form>
+</div>
+
+<nav class="nav">
+  <a href="Autocad Freelancer.html" class="nav_link">
+       <span class="nav_text">Home</span>
+     </a>
+
+  <a href="About.html" class="nav_link nav_link--active">
+        <span class="nav_text">About</span>
+  </a>
+
+  <a href="#" class="nav_link">
+        <span class="nav_text">Contact</span>
+  </a>
+</nav>
+
+
+</body>
+
+
+</html>
